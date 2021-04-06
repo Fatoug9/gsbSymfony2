@@ -1,3 +1,16 @@
 index:
     path: /
     controller: App\Controller\ConnexionController::index
+    
+connexion:
+    path: /connexion
+    controller: App\Controller\ConnexionController::seConnecter
+    
+consultationCompteRendu:
+    path: /consultation_compte_rendu
+    controller: App\Controller\ConsultationCompteRenduController::index
+  
+consultationPraticien:
+    path: /consultation_praticien
+    controller: App\Controller\ConsultationPraticienController::index
+    

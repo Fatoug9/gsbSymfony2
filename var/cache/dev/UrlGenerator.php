@@ -5,8 +5,10 @@
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format'], ['variable', '/', '\\d+', 'code'], ['text', '/_error']], [], []],
     'connexion2' => [[], ['_controller' => 'App\\Controller\\Connexion2Controller::index'], [], [['text', '/connexion2']], [], []],
-    'connexion' => [[], ['_controller' => 'App\\Controller\\ConnexionController::index'], [], [['text', '/connexion']], [], []],
     'consultation_compte_rendu' => [[], ['_controller' => 'App\\Controller\\ConsultationCompteRenduController::index'], [], [['text', '/consultation_compte_rendu']], [], []],
     'consultation_praticien' => [[], ['_controller' => 'App\\Controller\\ConsultationPraticienController::index'], [], [['text', '/consultation_praticien']], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\ConnexionController::index'], [], [['text', '/']], [], []],
+    'connexion' => [[], ['_controller' => 'App\\Controller\\ConnexionController::seConnecter'], [], [['text', '/connexion']], [], []],
+    'consultationCompteRendu' => [[], ['_controller' => 'App\\Controller\\ConsultationCompteRenduController::index'], [], [['text', '/consultation_compte_rendu']], [], []],
+    'consultationPraticien' => [[], ['_controller' => 'App\\Controller\\ConsultationPraticienController::index'], [], [['text', '/consultation_praticien']], [], []],
 ];

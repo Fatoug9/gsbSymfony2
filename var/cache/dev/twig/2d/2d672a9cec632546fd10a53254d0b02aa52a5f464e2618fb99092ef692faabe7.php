@@ -70,39 +70,22 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<style>
+        echo "    ";
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 6, $this->source); })()), 'form');
+        echo "
+<style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
     .gap-2{ max-width: 400px; align-items: center;}
 </style>
 
-<div class=\"example-wrapper\">
-    <h1>Hello ";
-        // line 13
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 13, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/var/www/html/gsbSymfony2/src/Controller/ConnexionController.php", 0), "html", null, true);
-        echo "\">src/Controller/ConnexionController.php</a></code></li>
-        <li>Your template at <code><a href=\"";
-        // line 18
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/var/www/html/gsbSymfony2/templates/connexion/index.html.twig", 0), "html", null, true);
-        echo "\">templates/connexion/index.html.twig</a></code></li>
-    </ul>
-</div>
         <div class=\"d-grid gap-2\">
   <button class=\"btn btn-primary\" type=\"button\">Se connecter : visiteur</button>
   <button class=\"btn btn-primary\" type=\"button\">Se connecter : delegue regional</button>
-</div>
+</div> 
       
-        ";
-        // line 26
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 26, $this->source); })()), 'form');
-        echo "
+        
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -121,7 +104,7 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
 
     public function getDebugInfo()
     {
-        return array (  104 => 26,  93 => 18,  89 => 17,  82 => 13,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -131,27 +114,20 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
 {% block title %}Hello ConnexionController!{% endblock %}
 
 {% block body %}
+    {{ form(form) }}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
     .gap-2{ max-width: 400px; align-items: center;}
 </style>
 
-<div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"{{ '/var/www/html/gsbSymfony2/src/Controller/ConnexionController.php'|file_link(0) }}\">src/Controller/ConnexionController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ '/var/www/html/gsbSymfony2/templates/connexion/index.html.twig'|file_link(0) }}\">templates/connexion/index.html.twig</a></code></li>
-    </ul>
-</div>
         <div class=\"d-grid gap-2\">
   <button class=\"btn btn-primary\" type=\"button\">Se connecter : visiteur</button>
   <button class=\"btn btn-primary\" type=\"button\">Se connecter : delegue regional</button>
-</div>
+</div> 
       
-        {{ form(form) }}
+        
 {% endblock %}
 ", "connexion/index.html.twig", "/var/www/html/gsbSymfony2/templates/connexion/index.html.twig");
     }

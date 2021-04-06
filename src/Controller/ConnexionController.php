@@ -24,7 +24,7 @@ class ConnexionController extends AbstractController
         ]);
     }
     
-    public function formToConnect(){
+    public function seConnecter(){
         $form = $this->createFormBuilder()
                 ->add('login', TextType::class)
                 ->add('motDePasse', PasswordType::class)
