@@ -73,25 +73,30 @@ class __TwigTemplate_dd4b09b891855926b60e259d888752ce264440570fad5eb21553dc64e21
         echo "<style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .gap-2{ max-width: 400px; align-items: center;}
 </style>
 
 <div class=\"example-wrapper\">
     <h1>Hello ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
+        // line 13
+        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 13, $this->source); })()), "html", null, true);
         echo "! ✅</h1>
 
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href=\"";
-        // line 16
+        // line 17
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/var/www/html/gsbSymfony2/src/Controller/ConnexionController.php", 0), "html", null, true);
         echo "\">src/Controller/ConnexionController.php</a></code></li>
         <li>Your template at <code><a href=\"";
-        // line 17
+        // line 18
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("/var/www/html/gsbSymfony2/templates/connexion/index.html.twig", 0), "html", null, true);
         echo "\">templates/connexion/index.html.twig</a></code></li>
     </ul>
+</div>
+        <div class=\"d-grid gap-2\">
+  <button class=\"btn btn-primary\" type=\"button\">Se connecter : visiteur</button>
+  <button class=\"btn btn-primary\" type=\"button\">Se connecter : delegue regional</button>
 </div>
 ";
         
@@ -111,7 +116,7 @@ class __TwigTemplate_dd4b09b891855926b60e259d888752ce264440570fad5eb21553dc64e21
 
     public function getDebugInfo()
     {
-        return array (  92 => 17,  88 => 16,  81 => 12,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  93 => 18,  89 => 17,  82 => 13,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -124,6 +129,7 @@ class __TwigTemplate_dd4b09b891855926b60e259d888752ce264440570fad5eb21553dc64e21
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .gap-2{ max-width: 400px; align-items: center;}
 </style>
 
 <div class=\"example-wrapper\">
@@ -134,6 +140,10 @@ class __TwigTemplate_dd4b09b891855926b60e259d888752ce264440570fad5eb21553dc64e21
         <li>Your controller at <code><a href=\"{{ '/var/www/html/gsbSymfony2/src/Controller/ConnexionController.php'|file_link(0) }}\">src/Controller/ConnexionController.php</a></code></li>
         <li>Your template at <code><a href=\"{{ '/var/www/html/gsbSymfony2/templates/connexion/index.html.twig'|file_link(0) }}\">templates/connexion/index.html.twig</a></code></li>
     </ul>
+</div>
+        <div class=\"d-grid gap-2\">
+  <button class=\"btn btn-primary\" type=\"button\">Se connecter : visiteur</button>
+  <button class=\"btn btn-primary\" type=\"button\">Se connecter : delegue regional</button>
 </div>
 {% endblock %}
 ", "connexion/index.html.twig", "/var/www/html/gsbSymfony2/templates/connexion/index.html.twig");

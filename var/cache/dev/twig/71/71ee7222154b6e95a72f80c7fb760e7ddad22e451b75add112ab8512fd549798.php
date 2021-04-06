@@ -67,16 +67,18 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
         ";
         // line 22
         $this->displayBlock('navbar', $context, $blocks);
-        // line 65
+        // line 49
         echo " 
             
         ";
-        // line 67
+        // line 51
         $this->displayBlock('body', $context, $blocks);
-        // line 68
-        echo "        ";
+        // line 52
+        echo "        
+        ";
+        // line 53
         $this->displayBlock('footer', $context, $blocks);
-        // line 78
+        // line 63
         echo "    </body>
 </html>
 ";
@@ -168,23 +170,6 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("consultation_praticien");
         echo "\">Consultation liste praticien</a>
         </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Link</a>
-        </li>
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-            Dropdown
-          </a>
-          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
-            <li><hr class=\"dropdown-divider\"></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>
-          </ul>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
-        </li>
       </ul>
       <form class=\"d-flex\">
         <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
@@ -193,13 +178,14 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
     </div>
   </div>
 </nav>
+        
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 67
+    // line 51
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -212,14 +198,14 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
 
     }
 
-    // line 68
+    // line 53
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 69
+        // line 54
         echo "            <!-- Copyright -->
   <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">
     © 2021 Copyright:
@@ -241,7 +227,7 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
 
     public function getDebugInfo()
     {
-        return array (  223 => 69,  216 => 68,  203 => 67,  168 => 38,  162 => 35,  156 => 32,  145 => 23,  138 => 22,  129 => 16,  127 => 15,  120 => 14,  111 => 10,  109 => 9,  102 => 8,  89 => 5,  80 => 78,  77 => 68,  75 => 67,  71 => 65,  69 => 22,  64 => 19,  62 => 14,  59 => 13,  56 => 8,  52 => 5,  46 => 1,);
+        return array (  209 => 54,  202 => 53,  189 => 51,  170 => 38,  164 => 35,  158 => 32,  147 => 23,  140 => 22,  131 => 16,  129 => 15,  122 => 14,  113 => 10,  111 => 9,  104 => 8,  91 => 5,  82 => 63,  80 => 53,  77 => 52,  75 => 51,  71 => 49,  69 => 22,  64 => 19,  62 => 14,  59 => 13,  56 => 8,  52 => 5,  46 => 1,);
     }
 
     public function getSourceContext()
@@ -285,23 +271,6 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
         <li class=\"nav-item\">
           <a class=\"nav-link active\" aria-current=\"page\" href=\"{{path('consultation_praticien')}}\">Consultation liste praticien</a>
         </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Link</a>
-        </li>
-        <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-            Dropdown
-          </a>
-          <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
-            <li><hr class=\"dropdown-divider\"></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>
-          </ul>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>
-        </li>
       </ul>
       <form class=\"d-flex\">
         <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">
@@ -310,9 +279,11 @@ class __TwigTemplate_4e2aa30dbf6d6c8ea773001491fc28d20f04d07916eea8180014457580a
     </div>
   </div>
 </nav>
+        
         {% endblock %} 
             
         {% block body %} {% endblock %}
+        
         {% block footer %}
             <!-- Copyright -->
   <div class=\"text-center p-3\" style=\"background-color: rgba(0, 0, 0, 0.2);\">
