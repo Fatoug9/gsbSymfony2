@@ -8,6 +8,7 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/connexion2' => [[['_route' => 'connexion2', '_controller' => 'App\\Controller\\Connexion2Controller::index'], null, null, null, false, false, null]],
         '/connexion' => [[['_route' => 'connexion', '_controller' => 'App\\Controller\\ConnexionController::index'], null, null, null, false, false, null]],
         '/consultation_compte_rendu' => [[['_route' => 'consultation_compte_rendu', '_controller' => 'App\\Controller\\ConsultationCompteRenduController::index'], null, null, null, false, false, null]],
         '/consultation_praticien' => [[['_route' => 'consultation_praticien', '_controller' => 'App\\Controller\\ConsultationPraticienController::index'], null, null, null, false, false, null]],
