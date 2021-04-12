@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ChoixController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+{{ form(formChoix) }}
+
+<div class="example-wrapper">
+    <h1>Choix</h1>
+<div class="d-grid gap-2">
+  <button class="btn btn-primary" type="button" href="{{path('consultation_compte_rendu')}}">Consulter les comptes rendus</button>
+  <button class="btn btn-primary" type="button" href="{{path('consultation_praticien')}}">Consulter les praticiens</button>
+</div>
+    
+</div>
+{% endblock %}

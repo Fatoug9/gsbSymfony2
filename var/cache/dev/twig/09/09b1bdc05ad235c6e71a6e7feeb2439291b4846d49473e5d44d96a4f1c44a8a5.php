@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* connexion/index.html.twig */
-class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf691413d564 extends Template
+/* choix/index.html.twig */
+class __TwigTemplate_3fc8253fc8ed0103d95e37b3d68186b4846dbb08a062bcb30821cea65fe90544 extends Template
 {
     private $source;
     private $macros = [];
@@ -40,9 +40,9 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "connexion/index.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "choix/index.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "connexion/index.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "choix/index.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -56,7 +56,7 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Connexion!";
+        echo "Hello ChoixController!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -70,24 +70,30 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <br><br>
-    Se connecter : delegue regional 
-    <br>
-    
-    ";
-        // line 10
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 10, $this->source); })()), 'form');
-        echo "
-<style>
+        echo "<style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-    .gap-2{ max-width: 400px; align-items: center;}
 </style>
 
+";
+        // line 11
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["formChoix"]) || array_key_exists("formChoix", $context) ? $context["formChoix"] : (function () { throw new RuntimeError('Variable "formChoix" does not exist.', 11, $this->source); })()), 'form');
+        echo "
 
-         
-      
-        
+<div class=\"example-wrapper\">
+    <h1>Choix</h1>
+<div class=\"d-grid gap-2\">
+  <button class=\"btn btn-primary\" type=\"button\" href=\"";
+        // line 16
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("consultation_compte_rendu");
+        echo "\">Consulter les comptes rendus</button>
+  <button class=\"btn btn-primary\" type=\"button\" href=\"";
+        // line 17
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("consultation_praticien");
+        echo "\">Consulter les praticiens</button>
+</div>
+    
+</div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -96,7 +102,7 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
 
     public function getTemplateName()
     {
-        return "connexion/index.html.twig";
+        return "choix/index.html.twig";
     }
 
     public function isTraitable()
@@ -106,32 +112,32 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
 
     public function getDebugInfo()
     {
-        return array (  79 => 10,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  92 => 17,  88 => 16,  80 => 11,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Connexion!{% endblock %}
+{% block title %}Hello ChoixController!{% endblock %}
 
 {% block body %}
-    <br><br>
-    Se connecter : delegue regional 
-    <br>
-    
-    {{ form(form) }}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-    .gap-2{ max-width: 400px; align-items: center;}
 </style>
 
+{{ form(formChoix) }}
 
-         
-      
-        
+<div class=\"example-wrapper\">
+    <h1>Choix</h1>
+<div class=\"d-grid gap-2\">
+  <button class=\"btn btn-primary\" type=\"button\" href=\"{{path('consultation_compte_rendu')}}\">Consulter les comptes rendus</button>
+  <button class=\"btn btn-primary\" type=\"button\" href=\"{{path('consultation_praticien')}}\">Consulter les praticiens</button>
+</div>
+    
+</div>
 {% endblock %}
-", "connexion/index.html.twig", "/var/www/html/gsbSymfony2/templates/connexion/index.html.twig");
+", "choix/index.html.twig", "/var/www/html/gsbSymfony2/templates/choix/index.html.twig");
     }
 }

@@ -19,6 +19,7 @@ return [
         ],
         '/' => [[['_route' => 'index', '_controller' => 'App\\Controller\\ConnexionController::index'], null, null, null, false, false, null]],
         '/connexion' => [[['_route' => 'connexion', '_controller' => 'App\\Controller\\ConnexionController::seConnecter'], null, null, null, false, false, null]],
+        '/choix' => [[['_route' => 'choix', '_controller' => 'App\\Controller\\ChoixController::formChoix'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

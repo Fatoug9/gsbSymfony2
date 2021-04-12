@@ -10,7 +10,7 @@ if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
 }
 
 require dirname(__DIR__, 3).'/vendor/autoload.php';
-require __DIR__.'/ContainerKhbx0hg/srcApp_KernelDevDebugContainer.php';
+require __DIR__.'/Container1VLQmzP/srcApp_KernelDevDebugContainer.php';
 
 $classes = [];
 $classes[] = 'Symfony\Bundle\FrameworkBundle\FrameworkBundle';
@@ -22,6 +22,7 @@ $classes[] = 'Symfony\Bundle\WebServerBundle\WebServerBundle';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser';
 $classes[] = 'Symfony\Bundle\FrameworkBundle\EventListener\ResolveControllerNameSubscriber';
 $classes[] = 'Symfony\Component\DependencyInjection\ServiceLocator';
+$classes[] = 'App\Controller\ChoixController';
 $classes[] = 'App\Controller\Connexion2Controller';
 $classes[] = 'App\Controller\ConnexionController';
 $classes[] = 'App\Controller\ConsultationCompteRenduController';

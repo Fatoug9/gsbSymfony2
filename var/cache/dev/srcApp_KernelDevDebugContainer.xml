@@ -114,6 +114,13 @@
     <service id="kernel" class="App\Kernel" public="true" synthetic="true">
       <tag name="routing.route_loader"/>
     </service>
+    <service id="App\Controller\ChoixController" class="App\Controller\ChoixController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.vdmMuyE.App\Controller\ChoixController"/>
+      </call>
+    </service>
     <service id="App\Controller\Connexion2Controller" class="App\Controller\Connexion2Controller" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="container.service_subscriber"/>
@@ -1799,6 +1806,9 @@
         <argument>server:status</argument>
       </call>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ChoixController" class="App\Controller\ChoixController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ChoixController" class="App\Controller\ChoixController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\ChoixController" class="App\Controller\ChoixController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\Connexion2Controller" class="App\Controller\Connexion2Controller" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\Connexion2Controller" class="App\Controller\Connexion2Controller" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Connexion2Controller" class="App\Controller\Connexion2Controller" autowire="true" autoconfigure="true" abstract="true"/>
@@ -2122,6 +2132,12 @@
         <argument key="session" type="service" id="session" on-invalid="ignore"/>
         <argument key="twig" type="service" id="twig" on-invalid="ignore"/>
       </argument>
+    </service>
+    <service id=".service_locator.vdmMuyE.App\Controller\ChoixController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\ChoixController"/>
+      <argument>App\Controller\ChoixController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.vdmMuyE" method="withContext"/>
     </service>
     <service id=".service_locator.vdmMuyE.App\Controller\Connexion2Controller" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\Connexion2Controller"/>

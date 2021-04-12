@@ -11,4 +11,5 @@ return [
     'connexion' => [[], ['_controller' => 'App\\Controller\\ConnexionController::seConnecter'], [], [['text', '/connexion']], [], []],
     'consultationCompteRendu' => [[], ['_controller' => 'App\\Controller\\ConsultationCompteRenduController::index'], [], [['text', '/consultation_compte_rendu']], [], []],
     'consultationPraticien' => [[], ['_controller' => 'App\\Controller\\ConsultationPraticienController::index'], [], [['text', '/consultation_praticien']], [], []],
+    'choix' => [[], ['_controller' => 'App\\Controller\\ChoixController::index'], [], [['text', '/choix']], [], []],
 ];
