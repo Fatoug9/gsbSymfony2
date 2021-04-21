@@ -16,4 +16,4 @@ consultationPraticien:
     
 choix:
     path: /choix
-    controller: App\Controller\ChoixController::formChoix
+    controller: App\Controller\ChoixController::index

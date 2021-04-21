@@ -78,6 +78,11 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
         // line 10
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 10, $this->source); })()), 'form');
         echo "
+    ";
+        // line 11
+        echo twig_escape_filter($this->env, twig_var_dump($this->env, $context, ...[0 => (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 11, $this->source); })())]), "html", null, true);
+        echo "
+    
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
@@ -106,7 +111,7 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
 
     public function getDebugInfo()
     {
-        return array (  79 => 10,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  83 => 11,  79 => 10,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -121,6 +126,8 @@ class __TwigTemplate_433c99e6156f30037373de359ea649138876f5e0b273c05d0e96bf69141
     <br>
     
     {{ form(form) }}
+    {{ dump(form) }}
+    
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }

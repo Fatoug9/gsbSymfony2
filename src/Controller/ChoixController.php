@@ -21,22 +21,4 @@ class ChoixController extends AbstractController
         
     }
     
-    public function formChoix(){
-        $formChoix = $this->createFormBuilder()
-                ->add('Consultation des comptes rendus', ButtonType::class)
-                ->add('Consultation de la liste des praticiens', ButtonType::class)
-                ->getForm();
-        $request = Request::createFromGlobals();
-        
-        $formChoix->handleRequest($request);
-        
-        if($formChoix->getClickedButton() === $formChoix->get('consultation_compte_rendu')){
-            
-            return $this->render('/consultation_compte_rendu/index.html.twig');
-            
-        }elseif($formChoix->getClickedButton() === $formChoix->get('praticien')){
-            return $this->render('/consultation_praticien/index.html.twig');
-        }
-        return $this->render('/choix/index.html.twig', array('form'=>$formChoix->createView()));
-    }
 }
